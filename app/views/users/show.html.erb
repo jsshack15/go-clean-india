@@ -1,8 +1,3 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,18 +73,14 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html">The 10 Steps</a></li>
                         <li class="active"><a href="portfolio.html">Join us!</a></li>
                         <li class="dropdown">  
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="blog-item.html">Blog Single</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>
-                        <li><a href="blog.html">Blog</a></li> 
                         <li><a href="contact-us.html">Contact</a></li>                        
                     </ul>
                 </div>
@@ -101,6 +92,11 @@
         <div class="container">
             <div class="center">
                <p id="notice"><%= notice %></p>
+               <p id="worldcount" font-size=40px></p>
+               <script>
+                   var url = document.URL
+document.getElementById("worldcount").innerHTML="Congratulations! you are the "+url.substr(url.lastIndexOf('/') + 1)+"th user to join our initiative!";
+               </script>
   <strong href="">Thank You for Registering   <%= @user.name %>!</strong>
 <div class="fb-share-button" data-href="https://www.facebook.com/goclindia" data-layout="button_count"></div>
 <a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="prakhar_5" data-hashtags="go!cleanIndia">Tweet</a>
@@ -118,14 +114,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
