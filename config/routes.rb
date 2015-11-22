@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/aboutus'
+  get 'static_pages/service'
+  root 'static_pages#home'
+
   resources :users
   get 'static_pages/home'
   get 'static_pages/contact_us'
