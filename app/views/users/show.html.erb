@@ -92,14 +92,14 @@
         <div class="container">
             <div class="center">
                <p id="notice"><%= notice %></p>
-               <p id="worldcount" font-size=40px></p>
+               <p id="worldcount"></p>
                <script>
                    var url = document.URL
 document.getElementById("worldcount").innerHTML="Congratulations! you are the "+url.substr(url.lastIndexOf('/') + 1)+"th user to join our initiative!";
                </script>
   <strong href="">Thank You for Registering   <%= @user.name %>!</strong>
 <div class="fb-share-button" data-href="https://www.facebook.com/goclindia" data-layout="button_count"></div>
-<a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="prakhar_5" data-hashtags="go!cleanIndia">Tweet</a>
+<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://gocleanindia.com" data-hashtags="go!CleanIndia">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <div id="fb-root"></div>
