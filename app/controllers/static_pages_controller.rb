@@ -7,4 +7,10 @@ class StaticPagesController < ApplicationController
   
   def aboutus
   end
+  
+  def service
+  end
+  
+  def blogitem
+  end
 end
